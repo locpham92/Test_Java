@@ -24,10 +24,9 @@ public class ManageProduct {
     }
 
     public int findByName(String name) {
-        int index = 0;
         for (int i=0; i<products.size(); i++) {
             if (products.get(i).getName().contains(name)) {
-                return index;
+                return i;
             }
         }
         return -1;
